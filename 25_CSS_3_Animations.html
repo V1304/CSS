@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS3 Animation</title>
+    <style>
+        body{
+            font-family: "Comic Sans MS",sans-serif;
+        }
+        #simple{
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border-radius: 50%;
+            border-right: 20px solid darkblue;
+            border-left: 20px solid darkblue;
+            box-shadow: 0 0 10px black;
+            animation: simple 2s infinite linear;
+        }
+        @keyframes simple {
+            0% , 50% , 100%{
+                background-color: lightblue;
+                border-color: darkblue;
+            }
+            25% , 75%{
+                background-color: darkblue;
+                border-color: lightblue;
+            }
+        }
+        #spin{
+            background: linear-gradient(45deg,black,white);
+            width: 100px;
+            height: 100px;
+            border: 20px solid coral;
+            border-radius: 50%;
+            box-shadow:  0 0 10px black;
+            border-top: 40px solid darkred;
+            border-bottom: 40px solid darkgreen;
+            animation: spin 2s infinite linear;
+        }
+        @keyframes spin {
+            0%{
+                transform: rotate(0deg);
+            }
+            100%{
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Simple Animation</h3>
+    <div id="simple"></div>
+
+    <hr>
+
+    <h3>Spin Animation</h3>
+    <div id="spin"></div>
+
+    <hr>
+
+    <h3>News Animation</h3>
+    <div id="news">
+        <p>Latest News: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, voluptatibus?</p>
+    </div>
+
+    <hr>
+
+    <!-- Box Animation -->
+    <h3>Box Animation</h3>
+    <div id="animate"></div>
+
+    <hr>
+
+    <!-- Foot Ball Animation -->
+    <h3>Foot Ball Animation</h3>
+    <div id="football"></div>
+    <hr>
+
+</body>
+</html>
